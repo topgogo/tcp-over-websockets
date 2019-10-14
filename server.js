@@ -9,7 +9,7 @@ const debug = require('debug')('tcp-over-websockets:server')
 
 const verifyRequest = (req, res) => {
 	if (req.upgrade) return
-	res.statusCode = 405
+	//res.statusCode = 405
 	res.end('connect via WebSocket protocol')
 }
 
